@@ -1,0 +1,36 @@
+
+
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+
+/* Additional styles */
+@import 'additional-styles/utility-patterns.css';
+@import 'additional-styles/flatpickr.css';
+
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+nav {
+    z-index: 1001 !important;
+}
+
+.gradientBg{
+    background: linear-gradient(99deg, #EE9AE5 0%, #5961F9 100%);
+}
+
+.btnPrimary {
+    @apply py-3 px-8 bg-secondary font-semibold text-white rounded-md shadow-2xl hover:bg-primary transition-all duration-300;
+}
+
+.btnSecondary {
+    @apply py-3 px-8 bg-primary font-semibold text-white rounded-md shadow-lg hover:bg-secondary transition-all duration-300;
+}
+
+.body {
+   background: 'bg-white';
+}
